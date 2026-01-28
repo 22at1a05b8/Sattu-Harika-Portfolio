@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Harika | AI Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins}
+body{background:#0b0f1a;color:white}
+nav{
+ position:fixed;top:0;width:100%;
+ background:rgba(0,0,0,.5);
+ backdrop-filter:blur(10px);
+ padding:15px 50px;
+ display:flex;justify-content:space-between;align-items:center;
+ z-index:100
+}
+nav a{color:white;text-decoration:none;margin:0 15px;font-weight:500}
+nav a:hover{color:#7c7cff}
+
+.hero{
+ height:100vh;
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+ padding:0 10%;
+}
+.hero h1{font-size:3rem}
+.hero p{color:#cfcfff;margin:15px 0}
+.btn{
+ padding:12px 28px;
+ border-radius:30px;
+ background:#7c7cff;
+ color:white;
+ text-decoration:none;
+ display:inline-block;
+ box-shadow:0 0 20px #7c7cff80;
+ transition:.3s
+}
+.btn:hover{transform:scale(1.05)}
+
+.avatar{
+ width:320px;
+ border-radius:50%;
+ box-shadow:0 0 50px #7c7cff;
+ animation:float 4s ease-in-out infinite;
+}
+@keyframes float{
+ 0%{transform:translateY(0)}
+ 50%{transform:translateY(-15px)}
+ 100%{transform:translateY(0)}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div><b>Harika.dev</b></div>
+  <a href="./gallery.html">Gallery</a>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div>
+    <h1>Hi, I'm <span style="color:#7c7cff">Sattu Harika</span></h1>
+    <p>AI Student • UI Developer • ServiceNow CSA</p>
+    <p>Building intelligent, beautiful & user-focused digital experiences.</p>
+    
+  </div>
+
+  <!-- AI Avatar -->
+  <img class="avatar" src="https://api.dicebear.com/7.x/bottts/svg?seed=Harika" alt="AI Avatar">
+</section>
+
+</body>
+</html>
